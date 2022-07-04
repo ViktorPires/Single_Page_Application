@@ -1,0 +1,840 @@
+@charset "UTF-8";
+@import url("reset.css");
+
+html {
+    scroll-behavior: smooth;
+}
+
+section:target {
+    scroll-margin-top: 4.5rem;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(236, 236, 236);
+}
+
+div#container {
+    margin: auto;
+}
+
+header#inicio {
+    position: relative;
+}
+
+header#inicio div {
+    background-color: #0d416f;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 7%;
+}
+
+header#inicio div img {
+    margin-left: 1rem;
+    margin-top: 0.3rem;
+}
+
+header#inicio div p {
+    position: absolute;
+    left: 5%;
+    bottom: 35%;
+    color: white;
+    font-size: 12pt;
+}
+
+header#inicio nav {
+    position: absolute;
+    left: 60%;
+    bottom: 35%;
+}
+
+header#inicio div nav a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: white;
+    font-size: 9.5pt;
+    transition: color 0.4s;
+    display: inline;
+}
+
+header#inicio div nav a:hover {
+    color:rgb(106, 167, 243);
+}
+
+header#inicio div nav ul li {
+    display: inline;
+}
+
+header#inicio figure img {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 10rem;
+}
+
+header#inicio hgroup {
+    position: absolute;
+    left: 32%;
+    bottom: 63%;
+    background-color: rgba(0,0,0,0.6);
+    width: 42rem;
+    height: 7rem;
+    color: white;
+    border-radius: 20px;
+}
+
+header#inicio hgroup h1 {
+    text-shadow: 1px 3px 1px #000000;
+    font-size: 36pt;
+    font-family: serif, arial, helvetica;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    padding-left: 0.3rem;
+}
+
+header#inicio hgroup h2 {
+    text-shadow: 1px 2px 1px #000000;
+    font-size: 16pt;
+    font-family: serif, arial, helvetica;
+    padding-left: 6rem;
+}
+
+header#inicio figcaption a {
+    position: absolute;
+    left: 46%;
+    bottom: 57%;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    background-color: #0d416f;
+    transition: all 0.4s ease-in-out; 
+    font-size: 10pt;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+header#inicio figcaption a:hover {
+    transform: scale(1.1);
+}
+
+main #deputados header, #partidos header, #bancadas header, #noticias header, #plenaria header, #contato header h2, #assessment header {
+    display: table;
+    margin: auto;
+}
+
+main #deputados h2, #partidos h2, #bancadas h2, #noticias h2, #plenaria h2, #contato header h2, #assessment header h2 {
+    text-shadow: 1px 1px 1px;
+    text-align: center;
+    font-size: 16pt;
+    font-weight: bold;
+    margin-bottom: 5rem;
+    color: black;
+}
+
+main #deputados header p, #partidos header p, #bancadas header p {
+    color: rgb(105, 105, 105);
+    text-shadow: 0.1px 0.1px 0.8px;
+    text-align: center;
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+main #deputados .formBusca, #partidos .formBusca {
+    text-align: center;
+}
+
+main #deputados .formBusca input, #partidos .formBusca input, #contato form fieldset input {
+    border-radius: 5px;
+    height: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+main #deputados .formBusca input:focus, #partidos .formBusca input:focus, #contato form fieldset input:focus {
+    background-color: rgb(242, 242, 114);
+}
+
+main #deputados .formBusca button, #partidos .formBusca button, #contato div button {
+    width: 17rem;
+    height: 2rem;
+    color: white;
+    background-color: rgb(4, 5, 77);
+    border-radius: 8px;
+    transition: all 0.4s ease-in-out;
+}
+
+main #deputados .formBusca button:hover, #partidos .formBusca button:hover, #contato div button:hover {
+    transform: scale(1.1);
+}
+
+main #deputados div#rolDeputados {
+    display: flex;
+    flex-direction: row;
+    width: 54rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 4rem auto 10rem auto;
+    gap: 1.1rem;
+}
+
+main div#rolDeputados div.cards {
+    border: 1px solid;
+    margin-bottom: 1rem;
+    width: 11.56rem;
+    height: 26.8rem;
+    background-color: white;
+    transition: all 0.4s ease-in-out;
+    border-radius: 20px;
+}
+
+main div#rolDeputados div.cards:hover {
+    transform: scale(1.1);
+}
+
+main div.cards figure img {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+main div#rolDeputados div.cards figcaption, div#rolPartidos figure.cardPartido figcaption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+main div#rolDeputados div.cards span {
+    line-height: 2rem;
+}
+
+main div#rolDeputados div.cards li, #contato div li {
+    list-style-type: circle;
+    margin: 0 0 1rem 1.2rem;
+    font-size: 9.4pt;
+}
+
+main div#rolDeputados div.cards li span {
+    line-height: 1rem;
+    color: rgba(0,0,0,0.5);
+}
+
+main #partidos div#rolPartidos {
+    margin: 4rem auto 10rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+main #partidos figure.cardPartido {
+    transition: all 0.4s ease-in-out;
+}
+
+main #partidos figure.cardPartido:hover {
+    transform: scale(1.1);
+}
+
+main #partidos figure.cardPartido figcaption p{
+    margin-bottom: 1rem;
+}
+
+main #partidos figure.cardPartido figcaption i {
+    color: black;
+    margin-right: 0rem;
+    font-size: 1.5rem;
+}
+
+main #partidos figure.cardPartido figcaption i.fa-facebook-square:hover {
+    color: #3b5998;
+}
+
+main #partidos figure.cardPartido figcaption i.fa-twitter-square:hover {
+    color: #00acee;
+}
+
+main #partidos figure.cardPartido figcaption i.fa-instagram-square:hover {
+    color: #833ab4;
+}
+
+main #bancada div#tabela-responsiva {
+    overflow-x: auto;
+}
+
+main #bancadas table#tabela {
+    margin: auto;
+    border-collapse: collapse;
+    width: 42rem;
+}
+
+main #bancadas table#tabela tbody tr:hover, table#tabela tfoot tr:hover {
+    background-color: #ddd;
+}
+
+main #bancadas table#tabela thead tr, td {
+    border: 2px solid rgba(204, 204, 204,0.6);
+    padding: 8px;
+}
+
+main #bancadas table#tabela thead {
+    color: white;
+    background-color: #0d416f
+}
+
+main #bancadas footer p {
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 10rem;
+    color: rgba(50, 50, 50, 0.6);
+}
+
+main #noticias article {
+    width: 48rem;
+    margin: auto auto 15rem auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+main #noticias article div img {
+    border-radius: 5px;
+}
+
+main #noticias article div h3 {
+    font-size: 12pt;
+    font-weight: bold;
+    color: #0b406e;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+main #noticias article div p:nth-child(2) {
+    line-height: 1.1rem;
+    text-align: justify;
+    font-size: 9.5pt;
+    color: rgba(0,0,0,0.6);
+}
+
+main #noticias article div p:nth-child(3) {
+    text-align: center;
+    font-size: 9.5pt;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: rgba(0,0,0,0.6);
+}
+
+main #noticias a {
+    display: inline-block;
+    width: 21rem;
+    height: 0.2rem;
+    background-color: rgb(4,5,77);
+    border-radius: 8px;
+    color: white;
+    font-size: 10pt;
+    font-weight: bold; 
+    text-align: center;
+    padding: 0.5rem 1rem 1rem 1rem;
+    transition: all 0.4s ease-in-out; 
+}
+
+main #noticias a:hover {
+    transform: scale(1.1);
+}
+
+main #plenaria div { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main #plenaria p {
+    text-align: center;
+    font-size: 11pt;
+    margin-bottom: 15rem;
+    margin-top: 0.5rem;
+}
+
+main #plenaria p span {
+    font-weight: bold;
+}
+
+main #plenaria p a {
+    color: rgba(50, 50, 50,0.6)
+}
+
+main #plenaria iframe {
+    border: 1px solid black;
+    background-color: #0d416f;
+    border-radius: 8px;
+}
+
+main #contato div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 10rem;
+    margin: auto;
+    margin-bottom: 10rem;
+    width: 45rem;
+}
+
+main #contato textarea {
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    height: 10rem;
+    width: 20.4rem;
+}
+
+main #contato textarea:focus {
+    background-color: rgb(242,242,114);
+}
+
+main #contato form fieldset input::placeholder, textarea::placeholder {
+    text-align: center;
+}
+
+main #contato form button {
+    width: 21rem;
+}
+
+main #contato form fieldset input {
+    width: 20.5rem;
+}
+
+main #contato header h3 {
+    margin-bottom: 1.5rem;
+}
+
+main #contato header p {
+    margin-bottom: 1.5rem;
+    font-size: 10pt;
+    color: rgba(50, 50, 50,0.6)
+}
+
+main #contato div section ul li {
+    margin-left: 0.7rem;
+}
+
+main #contato div section ul li a {
+    color: rgba(50, 50, 50, 0.6);
+    margin-left: 0.5rem;
+}
+
+main #assessment h3 {
+    font-size: 14.5pt;
+}
+
+main #assessment h3, h4 {
+    color: rgb(105, 105, 105);
+    text-shadow: 0.1px 0.1px 0.8px;
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem 0rem;
+    line-height: 1.5rem;
+}
+
+main #assessment div {
+    margin: auto;
+    width: 72rem;
+}
+
+main #assessment h4 {
+    text-indent: 3rem;
+}
+
+main #assessment p {
+    margin: 0 8rem;
+    text-indent: 3rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    color: rgba(0,0,0,0.6)
+}
+
+main #assessment p pre code {
+    margin-left: 5rem;
+}
+
+footer#rodape {
+    background-color: #0d416f; 
+    width: 100%;
+    height: 3.5rem;
+    position: relative;
+}
+
+footer#rodape p {
+    font-size: 11pt;
+    color: white;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+footer#rodape a img {
+    position: absolute;
+    left: 97%;
+    top: 6%;
+    transition: all 0.4s ease-in-out;
+}
+
+footer#rodape a img:hover {
+    transform: scale(1.1);
+}
+
+/*Folha de Estilo para Dispositivos Móveis*/
+@media screen and (max-height: 768px) {
+    header#inicio div img {
+        margin-left: 1rem;
+        margin-top: 0.1rem;
+    }
+
+    header#inicio div p {
+        left: 8%;
+    }
+
+    header#inicio div nav {
+        left: 32%;
+    }
+
+    header#inicio hgroup {
+        width: 28rem;
+        height: 5.5rem;
+        left: 28%;
+        top: 19%;
+    }
+
+    header#inicio hgroup h1 {
+        font-size: 24pt;
+        text-align: center;
+    }
+
+    header#inicio hgroup h2 {
+        font-size: 12pt;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    header#inicio figcaption a {
+        left: 42%;
+    }
+
+    main #assessment div {
+        width: 64rem;
+    }
+
+    main #assessment h4 {
+        text-align: justify;
+        margin-right: 8rem;
+        margin-left: 8rem; 
+    }
+
+    footer#rodape a img {
+        left: 94.5%;
+        top: 6%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-height: 480px) {
+    section:target {
+        scroll-margin-top: 3rem;
+    }    
+
+    header#inicio div {
+        padding-bottom: 0.2rem;
+    }
+
+    header#inicio div p {
+    left: 18%;
+    bottom: 40%;
+    color: white;
+    font-size: 5pt;
+    }
+
+    header#inicio div img {
+        margin-left: 1rem;
+        width: 10%;
+        height: 100%;
+    }
+
+    header#inicio nav {
+        position: absolute;
+        bottom: 15%;
+    }
+    
+    header#inicio div nav a {
+        margin-left: 1rem;
+        color: white;
+        font-size: 4.8pt;
+    }
+
+    
+    header#inicio hgroup {
+        width: 12rem;
+        height: 4rem;
+        left: 20%;
+        top: 15%;
+    }
+
+    header#inicio hgroup h1 {
+        font-size: 10pt;
+        text-align: center;
+    }
+
+    header#inicio hgroup h2 {
+        font-size: 6pt;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    header#inicio figcaption a {
+        bottom: 56%;
+        left: 38%;
+        padding: 0.4rem 0.8rem;
+        font-size: 6pt;
+        border-radius: 4px;
+    }
+
+    main #deputados div#rolDeputados {
+        display: flex;
+        flex-direction: column;
+        width: 15rem;
+        height: 68rem;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 2rem auto 4rem auto;
+    }
+
+    main div#rolDeputados div.cards {
+        border: 1px solid;
+        margin-bottom: 0rem;
+        width: 7rem;
+        height: 15rem;
+    }
+
+    main div.cards figure img {
+    width: 65%;
+    margin-left: 1.3rem;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    }
+    
+    main div#rolDeputados div.cards figcaption, div#rolPartidos figure.cardPartido figcaption {
+        font-size: 6pt;
+        margin-top: 0.2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    main div#rolDeputados div.cards li, #contato div li {
+    margin: 0 0 0.4rem 1.2rem;
+    font-size: 6.5pt;
+    }
+
+    main #deputados header, #partidos header, #bancadas header, #noticias header, #plenaria header, #contato header h2, #assessment header {
+        display: table;
+        margin: auto;
+    }
+    
+    main #deputados h2, #partidos h2, #bancadas h2, #noticias h2, #plenaria h2, #contato header h2, #assessment header h2 {
+        font-size: 10pt;
+        font-weight: bold;
+        margin-bottom: 2.5rem;
+    }
+    
+    main #deputados header p, #partidos header p, #bancadas header p {
+        font-size: 8pt;
+    }
+
+    main #deputados .formBusca input, #partidos .formBusca input, #contato form fieldset input {
+        height: 1rem;
+    }
+    
+    main #deputados .formBusca button, #partidos .formBusca button, #contato div button {
+        height: 1.5rem;
+        font-size: 8pt;
+    }
+    
+    main #partidos div#rolPartidos {
+        margin: 0rem auto 4rem auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        width: 18rem;
+        height: 25rem;
+    }
+    
+    main #partidos figure.cardPartido {
+        width: 50%;
+    }
+
+    main #partidos figure.cardPartido img {
+        width: 60%;
+        margin-left: 2rem;
+    }
+
+    main #partidos figure.cardPartido figcaption i {
+        font-size: 1.2rem;
+    }
+
+    main #bancadas table#tabela {
+        width: 100%;
+    }
+    
+    main #bancadas table#tabela, thead, tbody, tfoot, td, tr { 
+		display: block; 
+	}
+
+    main #bancadas table#tabela thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+    main #bancadas table#tabela tr { 
+        border: 1px solid #ccc;
+    }
+	
+	main #bancadas table#tabela td { 
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%;
+        font-size: 9pt;
+	}
+
+    main #bancadas table#tabela td::before { 
+		position: absolute;
+		top: 0px;
+        border-radius: 2px;
+		left: 6px;
+		width: 40%;
+        height: 70%;
+        padding-top: 9px;
+        text-align: center;
+		white-space: nowrap;
+        color: white;
+        background-color: #0d416f;
+	}
+
+    td:nth-of-type(1)::before { content: "Partido/Bloco"; }
+	td:nth-of-type(2)::before { content: "Bancada"; }
+	td:nth-of-type(3)::before { content: "Líder/Representante"; }
+	td:nth-of-type(4)::before { content: "Nome do Partido/Bloco"; }
+
+    
+    main #bancadas footer p {
+      font-size: 9pt;
+    }
+
+    main #noticias article {
+        width: 15rem;
+        margin: auto auto 10rem auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    main #noticias article div img {
+        width: 100%;
+    }
+
+    main #noticias article div h3 {
+        margin: 0 0rem 1rem 0rem;
+        font-size: 12pt;
+    }
+
+    main #noticias article div p:nth-child(2) {
+        margin: 0 0rem;
+        font-size: 9pt;
+    }
+    
+    main #noticias article div p:nth-child(3) {
+        font-size: 9pt;
+    }
+
+    main #noticias a {
+        width: 15rem;
+        height: 0.2rem;
+        font-size: 8pt;
+        padding: 0.5rem 0.5rem 0.8rem 0.5rem;
+    }
+
+    main #plenaria div { 
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    main #plenaria p {
+        font-size: 8pt;
+        margin-bottom: 10rem;
+        margin-top: 0.5rem;
+    }
+    
+    main #plenaria iframe {
+        border-radius: 8px;
+        height: 180px;
+        margin: 0 0.5rem;
+    }
+
+    main #contato div {
+        height: 30rem;
+        margin: 0rem auto 10rem auto;
+        width: 100%;
+    }
+    
+    main #contato textarea {
+        border-radius: 5px;
+        margin-bottom: 0.5rem;
+        margin-left: 0.5rem;
+        height: 8rem;
+        width: 15rem;
+    }
+    
+    main #contato form fieldset input {
+        width: 15rem;
+        margin-left: 0.5rem;
+    }
+
+    main #contato form button {
+        width: 16rem;
+        margin-left: 0.2rem;
+        margin-bottom: 0.7rem;
+    }
+    
+    main #contato header h3 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        font-size: 11pt;
+    }
+    
+    main #contato div section ul li {
+        font-size: 9pt;
+        margin-left: 4rem;
+        line-height: 1.5rem;
+    }
+
+    footer#rodape {
+        width: 100%;
+        height: 3rem;
+    }
+    
+    footer#rodape p {
+        font-size: 6pt;
+        color: white;
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+    
+    footer#rodape a img {
+        width: 10%;
+        left: 89%;
+        top: 20%;
+    }
+}
